@@ -50,6 +50,9 @@ def get_no_of_days_extended(date):
     # monthrange returns [weekday of first day of the month, number of days in month]
     return monthrange(year, month)[1]
 
+'''
+    In case we would not like to use calendar - below algorithm to check leap year
+
     if year % 4 == 0:
         if year % 100 == 0:
             if year % 400 == 0:
@@ -60,3 +63,4 @@ def get_no_of_days_extended(date):
             print('leap year')
     else:
         print('not leap year')
+'''
